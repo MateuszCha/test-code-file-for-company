@@ -1,3 +1,8 @@
+/**
+ *  
+ * @author MCh
+ * @version 1.0.1.2 * 
+ */
 package butelkaa;
 /**
  * 
@@ -152,7 +157,7 @@ public class Butla
         }
         
     }
-    void przelej(float fIloscLitrow, Butla butelka ) // boolen
+     void przelej(float fIloscLitrow, Butla butelka ) // boolen
     {        
          /**
      * This method transfer waterm between two bottels.

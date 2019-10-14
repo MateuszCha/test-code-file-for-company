@@ -15,7 +15,7 @@ public class Butelkaa
     public static void main(String[] args) 
     {
          Butla butelka[] = new Butla[50];
-         for (int i = 0; i<butelka.length; i++)
+         for (int i = 0; i<butelka.length; i++) // for(Butla Obutelka: butelka) { Obutelka = new Butla(2.5F,6F);}
          {
              butelka[i] = new Butla(2.5F,6F);
          }
