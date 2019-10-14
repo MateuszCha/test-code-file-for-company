@@ -79,17 +79,25 @@ public class ProstaAplikacjaNotatnik extends JFrame
         opcje.add(new JMenuItem("opcje 2"));
         opcje.add(tylkoDoOdczytu);
         edycja.add(pomoc);
-        zapisz.setMnemonic('z');                            /// podkresla literke i [przy wywloaniu pasa i nacieniecu z wykonuje
-        zapisz.setAccelerator(KeyStroke.getKeyStroke("ctrl  S")); //ctrl z malej i s z duzej
-        zapisz.setToolTipText("zapisaie nie dysku pliku"); /// opis jak sie najedzie 
+        zapisz.setMnemonic('z');                            
+        zapisz.setAccelerator(KeyStroke.getKeyStroke("ctrl  S")); 
+        zapisz.setToolTipText("zapisaie nie dysku pliku"); 
         przycisk.setToolTipText("zapisanie na dysku pliku");
         
         
-        przycisk.addActionListener((ActionEvent ae) -> {       /// lambda
+        przycisk.addActionListener((ActionEvent ae) -> { // lambda this is shortcut:      
             przyciskKlik(ae);
         });
-        tylkoDoOdczytu.addActionListener((ActionEvent ae) -> { /// lambda
-            TylkoDoOdczytu();
+        /* .addActionListener(new Action Listener ()
+          @Override
+            public void actionPerformed(ActionEvent ae) 
+            { 
+                przyciskKlik(ae);
+            }
+        
+        */
+        tylkoDoOdczytu.addActionListener((ActionEvent ae) -> { 
+                TylkoDoOdczytu();
         });                 
         textArea.addKeyListener(new KeyAdapter() 
         {
@@ -125,7 +133,7 @@ public class ProstaAplikacjaNotatnik extends JFrame
     }
     
     private void TylkoDoOdczytu()
-   {
+    {
          if (true==tylkoDoOdczytu.isSelected())
          { 
              System.out.println("cos");
@@ -139,7 +147,7 @@ public class ProstaAplikacjaNotatnik extends JFrame
              textArea.setEditable(true);
          }
          
-   }
+    }
     private void przyciskKlik(ActionEvent ae)
     {
             przycisk.setEnabled(false);

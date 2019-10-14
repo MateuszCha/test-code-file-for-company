@@ -1,23 +1,52 @@
 package butelkaa;
-
-
-public class butla 
+/**
+ * 
+ *  This class
+ */ 
+ 
+public class Butla 
 {
+    
+ /**
+ *  @param fIloscLitrow This param represetns how much water is in a bottel  
+ *  @param fPojemnosc This param represetns size of bottel 
+ *  @param idCalosc This param is static and icrements when a new object is created
+ *  @param id This parmm is ID of this object 
+ * 
+ */
+    
    private float fIloscLitrow;
    private float fPojemnosc;
    private static int idCalosc =0 ;
    private int id = 0;
+
+   
     
-   butla()
+  Butla()
    {
+       /**
+        * This is default constrator.
+        * Who calls to new one with parametrs (0,0)
+        * 
+        */
        this(0,0);
    }
-   butla(float iloscLitrow)       
+   Butla(float iloscLitrow)       
    {
+       /**
+        * This is constrator with one param.
+        * And it set size water im the bottel
+        * Who calls to new one with parametrs (parm,0)        * 
+        */
        this(iloscLitrow, 0);
    }
-   butla(float iloscLitrow, float fPojemnosc)
+   Butla(float iloscLitrow, float fPojemnosc)
    {
+       /**
+        * This is constrator with two param.
+        * First param  set size water in the bottle   
+        * Secend param set size of bottle 
+        */
        
        setPojemnosc(fPojemnosc); //this.fPojemnosc = fPojemnosc; 
        setIlosc((fPojemnosc > iloscLitrow) ?iloscLitrow:fPojemnosc); //this.fPojemnosc = (fPojemnosc > iloscLitrow) ?iloscLitrow:fPojemnosc);
@@ -28,31 +57,57 @@ public class butla
        */
        idCalosc++; 
        this.id = idCalosc;
-   }
-   
+   }   
    private void setIlosc(float ilosc)
     {
+    /**
+     * This is set method.
+     * Parma set size water im the bottle
+     */
         this.fIloscLitrow = ilosc;        
     }
     float getIlosc()
     {
+    /**
+     * This is get method.
+     * @return <b>float</b> Return size water im the bottle
+     */   
         return this.fIloscLitrow;
     }
     private void setPojemnosc(float fPojemnosc)
     {
+     /**
+     * This is set method.
+     * Parma set size of bottle
+     */
         this.fPojemnosc = fPojemnosc;
     }
     float getPojemnosc()
     {
+     /**
+     * This is get method.
+     * @return <b>float</b> Return size of bottel
+     */   
         return this.fPojemnosc;
-    }
+    }    
     int getId()
     {
+     /**
+     * This is get method.
+     * @return <b>int</b> Return ID of this object     
+     */   
         return this.id;
     }
     
     float wlej(float fIloscLitrow)
     {
+    /**
+     * This method add value of water to the size watter in the bottel.
+     * And check how many water do you may add in bottle to make it full. Defined by a class parma which is called "this.fPojemnosc"  
+     * @Parma fIloscLitrow  This parma represents how many water do you want add into the bottel.     * 
+     * @return <b>float</b> Return the value of water over limit or "0".  
+     * 
+     */
       float fKontrolna = 0F;       
         if (this.getPojemnosc() >= this.getIlosc()+fIloscLitrow)
         {
@@ -71,6 +126,18 @@ public class butla
     
     float wylej(float fIloscLitrow)
     {
+      /**
+     * This method remove value of water from the size watter in the bottel.
+     * And check how many water do you may remove from the bottle to make it empty. Defined by a class parma which is called "this.fIloscLitrow"  
+     * @Parma fIloscLitrow  This parma represents how many water do you want remove from the bottel.     * 
+     * @return <b>float</b> Return the value of water under limit or "0". Limit define by water size in bottel
+     * <pre>
+     * Example:
+     *  if the water size is bigger than "0" then return value is "0"
+     *  else 
+     * return value under limit
+     * </pre>
+     */
         float fKontrolna = 0F;
         if (this.fIloscLitrow-fIloscLitrow >= 0)
         {
@@ -85,8 +152,14 @@ public class butla
         }
         
     }
-    void przelej(float fIloscLitrow, butla butelka ) // boolen
+    void przelej(float fIloscLitrow, Butla butelka ) // boolen
     {        
+         /**
+     * This method transfer waterm between two bottels.
+     * @Parma fIloscLitrow  This parma represents how many water do you transfer betwenn the bottel.  
+     * @Parma butelka <b> Object: Butla </b> This object represent bottle to which transfer water.
+     * 
+     */
         float fKontrolna = 0F;       
         if(fIloscLitrow > this.getIlosc())
         {
@@ -109,6 +182,10 @@ public class butla
     
     public String toString()
     {
+      /** 
+       * this is ovverid method toString
+       * And describes the class parm. 
+       */
       return "butelak nr "+this.getId()+" o ilosci plynu : "+this.getIlosc()+" oraz pojemnosci : "+this.getPojemnosc();   
     }
 }

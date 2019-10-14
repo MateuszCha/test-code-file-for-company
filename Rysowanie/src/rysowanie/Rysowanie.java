@@ -21,7 +21,7 @@ public class Rysowanie extends JFrame
        int wys = Toolkit.getDefaultToolkit().getScreenSize().width;
        int sze = Toolkit.getDefaultToolkit().getScreenSize().height;
        
-       JButton start = (JButton)rysunek.add(new JButton("Start")); // przypisanie dcomponentu do butona ciekawe
+       JButton start = (JButton)rysunek.add(new JButton("Start"));
        JButton stop = (JButton)rysunek.add(new JButton("Stop"));
        JButton usun = (JButton)rysunek.add(new JButton("Usun"));
        
@@ -202,7 +202,7 @@ public class Rysowanie extends JFrame
             {
              System.out.println(ex.getMessage());
              //lista.clear();
-             repaint(); // odsiweza szybke 
+             repaint();
             }
                     
                 

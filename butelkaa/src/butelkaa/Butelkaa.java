@@ -1,13 +1,23 @@
+/**
+ *  
+ * @author MCh
+ * @version 1.0.1.2
+ * 
+ * This is <code>main</code> class
+ */
 package butelkaa;
-
-public class Butelkaa {
+/**
+ * This is  <b>main</b> class 
+ */
+public class Butelkaa 
+{
 
     public static void main(String[] args) 
     {
-         butla butelka[] = new butla[50];
+         Butla butelka[] = new Butla[50];
          for (int i = 0; i<butelka.length; i++)
          {
-             butelka[i] = new butla(2.5F,6F);
+             butelka[i] = new Butla(2.5F,6F);
          }
          System.out.println(butelka[32].toString()); 
           butelka[32].wlej(2);
