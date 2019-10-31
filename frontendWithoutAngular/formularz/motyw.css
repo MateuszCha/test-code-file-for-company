@@ -1,0 +1,96 @@
+body
+{
+	
+	height:100%;	
+	background-color: #FBFDD5;
+}
+
+
+.header
+{
+	height:100%;
+	width:100;
+	font-size:25px;
+	
+}
+.formularz
+{
+	height:550px;
+	width:600px;
+	background-color:#FCFDEB;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10%;
+	border:1px grove #8D8E85;
+	border-radius:10px;
+	-webkit-box-shadow: -1px 3px 29px 24px rgba(190,192,150,1);
+	-moz-box-shadow: -1px 3px 29px 24px rgba(190,192,150,1);
+	box-shadow: -1px 3px 29px 24px rgba(190,192,150,1);
+}
+.TextFild
+{
+	border-radius:5px;
+	font-size:20px;		
+	opacity:1;
+	text-align:center;
+	margin-bottom:10px;
+	background-color:#FF8A8A;
+	border:3px solid #FF3232
+	
+}
+.TiltText
+{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	border:none;
+}
+hr
+{
+	margin-left:0px;
+	margin-right:0px;
+	padding:0px;
+}
+
+.Ltext
+{
+	font-size:15px;
+	
+}
+.miniFormularz
+{
+	margin:auto;
+	padding:20px;
+}
+p
+{
+	padding:0px;
+	margin:5px;
+}
+.ImputNumberCss
+{	
+	
+	width:80px;
+	font-size:20px;
+	border-radius:5px;	
+	background-color:#FF8A8A;	
+	border:3px solid #FF3232;
+	text-align:center;
+	
+}
+.CheckButton
+{
+	line-height: 15px;
+	padding:10px;
+}
+#button1
+{
+	width:120px;
+	height:50px;
+	border-radius:10px;
+	background:#F6FD48;
+	border-bottom-color:#FF7600;
+	border-bottom-width:3px;
+	margin-top:10px;
+}

@@ -1,0 +1,150 @@
+body
+{
+	color:#E98E25;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+a 
+{
+	color:#1366EA;
+}
+#okno
+{
+	background-color:#000000;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	border:5px solid #E98E25;
+	position:relative;
+	
+}
+#CV
+{
+	font-size:10px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	margin-bottom:40px;
+	
+}
+#header
+{
+	display:block;
+	width:100%;
+	height:280px;
+	padding:0px 0px;
+}
+#photo
+{
+	float:left;
+	margin-left:40px;	
+}
+#tytul
+{	
+	width:40%;
+	font-size:40px;	
+	float:left;
+	margin-top:120px;
+	margin-left:150px;
+	text-align:centr;
+}
+#lista
+{
+	border:2px solid #206196;
+	border-radius:20px;
+	width:110px;
+	position: absolute;
+	right:0%;
+	top:20%;
+}
+.ElementsListy
+{		
+	display:block;
+	padding:10px;
+	text-align:center;
+	color: #ffffff;
+}
+#ElementsListy1
+{
+	background-color:#FF6700;	
+	border-radius:18px 18px 0px 0px;	
+	border-bottom:2px solid #206196;
+}
+#ElementsListy1:hover
+{
+	background-color:#EE5600;
+}
+#ElementsListy2
+{
+	background-color:#2DD337;	
+	border-radius:0px 0px 18px 18px;
+}
+#ElementsListy2:hover
+{
+	background-color:#1CC226;
+}
+.ReferencToSiteLocation
+{
+	height:100%;
+	width:100%;	
+	color:white;
+	text-decoration:none;
+	display:block;	
+}
+#pauseVerticla
+{
+	width:100%;
+	background-color:#206196;
+	height:40px;
+	-webkit-box-shadow: 0px 8px 11px 2px rgba(32,97,150,0.69);
+	-moz-box-shadow: 0px 28px 11px 2px rgba(32,97,150,0.69);
+	box-shadow: 0px 8px 11px 2px rgba(32,97,150,0.69);	
+}
+#tabelka
+{
+	height:850px;
+	width:100%;	
+}
+#pierwszaK
+{	
+	float:left;
+	width:220px;
+}
+#pause2
+{	
+	float:left;
+	background-color:#206196;
+	width:40px;
+	height:100%;
+	-webkit-box-shadow: 12px 17px 19px 8px rgba(32,97,150,0.69);
+	-moz-box-shadow: 12px 17px 19px 8px rgba(32,97,150,0.69);
+	box-shadow: 12px 17px 19px 8px rgba(32,97,150,0.69);
+}
+#drugaK
+{	
+	float:left;
+	height:100%;
+}
+.naglowek
+{
+	border-top:1px solid #206196;
+	font-size:24px;
+	margin-left:10px;	
+}
+
+.boczneMenu
+{	
+	margin-left:10px;
+}
+footer
+{	
+	padding-left:5%;
+	padding-right:5%;
+	text-align:center;
+	font-size:10px;
+}
+	
+	
