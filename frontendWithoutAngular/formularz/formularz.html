@@ -13,47 +13,46 @@
 			<div class="formularz" style="text-align:center">	
 			<div style="padding:10px"></div>
 				<div class="miniFormularz">				
-				 <form class="TiltText">
-				 
-				  <p> <b>Nazwa Firmy:</b></p>
-				   <input class="TextFild" id="firma" type="text" placeholder="Company name"/>	
-				   <hr>
-				 <p class = "TiltText" style="margin-left:10px"> <b>Proszę wprowadzic kwotę: </b></p>
-					<label class="Ltext"> 
-						<b> <span style="margin-bottom:10px;" >Od: </span></b>
-						<input class="ImputNumberCss" id="FirstValuePayment" type="number" name="FirtValue" step="100" min="0" max="100000" value="0"/>
-							<b> Do: </b>
-						<input class="ImputNumberCss" id="SecendValuePayment" type="number" name="SecendValue" step="100" min="0" max="100000" value="0"/>
-					</label>
-					<label class="CheckButton">
-						<br>
-						<input id="option-one" type="radio" name="optionradioTax" value="opcja1T" checked /> 						
-						Brutto 
-					</label>
-					<label class="CheckButton">
-						<input id="option-two" type="radio" name="optionradioTax" value="opcja2T" />
-						Netto
-					</label>				
-				<hr>
-				 <p class="TiltText"> <b>Rodzaj umowy:</b></p>				 
-					<label class="CheckButton">
-						<input id="option-one-one" type="radio" name="optionradioDocument" value="opcja1D"/> 
-						Umowa zlecenie 
-					</label>
-					<label class="CheckButton">
-						<input id="option-two-two" type="radio" name="optionradioDocument" value="opcja2D" />
-						B2B
-					</label>
-					<label class="CheckButton">
-						<input id="option-three-three" type="radio" name="optionradioDocument" value="opcja3D" checked />
-						Umowa o Prace
-					</label>
-				 <hr>
-				<p class="TiltText"> </p>
-				  <p> <b>Numer Kontaktowy:</b></p>
-				   <input class="TextFild" id="numberPhone" type="text" placeholder="Phone number"/>			 
-				  </form>
-				  <input id="button1" type="submit" value="Przeslij"/>				  
+				 <form class="TiltText" name="formularz" action="/action_page.php">				 
+					  <p> <b>Nazwa Firmy:</b></p>
+					    <input class="TextFild" id="firma" type="text" name="firmName" placeholder="Company name"/>	
+					    <hr>
+					    <p class = "TiltText" style="margin-left:10px"> <b>Proszę wprowadzic kwotę: </b></p>
+						<label class="Ltext"> 
+							<b> <span style="margin-bottom:10px;" >Od: </span></b>
+							<input class="ImputNumberCss" id="FirstValuePayment" type="number" name="FirtValue" step="100" min="0" max="100000" value="0"/>
+								<b> Do: </b>
+							<input class="ImputNumberCss" id="SecendValuePayment" type="number" name="SecendValue" step="100" min="0" max="100000" value="0"/>
+						</label>
+						<label class="CheckButton">
+							<br>
+							<input id="option-one" type="radio" name="optionradioTax" value="opcja1T" checked /> 						
+							Brutto 
+						</label>
+						<label class="CheckButton">
+							<input id="option-two" type="radio" name="optionradioTax" value="opcja2T" />
+							Netto
+						</label>				
+						<hr>
+						<p class="TiltText"> <b>Rodzaj umowy:</b></p>				 
+						<label class="CheckButton">
+							<input id="option-one-one" type="radio" name="optionradioDocument" value="opcja1D"/> 
+							Umowa zlecenie 
+						</label>
+						<label class="CheckButton">
+							<input id="option-two-two" type="radio" name="optionradioDocument" value="opcja2D" />
+							B2B
+						</label>
+						<label class="CheckButton">
+							<input id="option-three-three" type="radio" name="optionradioDocument" value="opcja3D" checked />
+							Umowa o Prace
+						</label>
+						<hr>
+						<p class="TiltText"><b>Numer Kontaktowy:</b></p>
+					    <input class="TextFild" id="numberPhone" type="text" name="nbPhone" placeholder="Phone number"/>
+					    <br>
+					    <input id="button1" type="button" onclick="formMessage()" value="Przeslij"/>	
+				  </form>				  			  
 				</div>	
 			</div>
 		</div>

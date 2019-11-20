@@ -9,7 +9,27 @@ function ChangeColorFuction(InputText)
 		{
 			InputText.style.backgroundColor="#FF8A8A";
 			InputText.style.border="3px solid #FF3232";
-		}	
+		}
+		console.log("cos");
+	isPalindrome("wordrow");		
+}
+function isPalindrome(word)
+{
+    word = word.toLowerCase();
+	console.log(word);
+    let index = word.length;
+	 console.log(index);
+
+  for(i=0;i<index;i++)
+  {
+	  console.log(word[i]);
+	  console.log(word[index-i-1]);
+    if (word.charCodeAt(i)!=word.charCodeAt(index-i-1))
+    {	 
+   		 return false;
+    }
+  }
+  return true;
 }
 
 function RoundValue(value)
@@ -17,6 +37,7 @@ function RoundValue(value)
 	var RoundValue=value/100;	
 	return RoundValue=Math.round(RoundValue)*100;	
 }
+
 function isANumber(InputText)
 {
 	if(isNaN(parseInt(InputText.value)) || InputText.value < 0)
@@ -75,6 +96,12 @@ function isNumberPhone(NumberText)
 			NumberText.style.border="3px solid #FF3232";
 		}
 }
+function formMessage()
+{
+	alert("mozna by bylo wyslac, lecz njapierw trzeba sprawdzic czy zostaly wypelnione lini odpowiednio w skrocie moza sprawdzic kolor pola lub zrobic zmienna globalna wktorej bd zapisywany stan w postaci binarnej");
+}
+
+
 
 document.addEventListener("DOMContentLoaded",function()
 {	
