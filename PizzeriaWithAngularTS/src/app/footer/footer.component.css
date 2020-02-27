@@ -1,0 +1,41 @@
+#test
+{
+  width: 100%;
+  background-color: #161718;
+  border-top: 2px #594033 solid;
+}
+#test1
+{
+  background-color: peru;
+}
+p{
+  color: #544A45;
+
+}
+.info
+{
+  width: 7%;
+  margin-top: 60px;
+  float: left;
+  font-size: 1vw;
+  line-height: 1.2vw;
+}
+#subscribe
+{
+  width: 45%;
+  margin-left: 5%;
+  margin-top: 70px;
+  float: left;
+  text-align: center;
+  font-size: 1vw;
+  line-height: 1vw;
+
+}
+#map
+{
+  margin-left: 5%;
+  margin-top: 30px;
+  float: left;
+  font-size: 1vw;
+  line-height: 1vw;
+}

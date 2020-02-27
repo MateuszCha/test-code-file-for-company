@@ -1,0 +1,34 @@
+<div id='test'>
+  <div class="info" style="margin-left: 5%;">
+  <p>
+     <b>Nazwa : </b><br>
+     <b>Adres :</b><br>
+     <b>Tel :</b><br>
+     <b>Miasto : </b>
+  </p>
+  </div>
+  <div class="info" style="width: 10%;">
+    <p>
+      {{Firminfo.getName()}} <br>
+      {{Firminfo.getAdrres()}} {{Firminfo.getNb()}} <br>
+      {{Firminfo.getnbPhone()}} <br>
+      {{Firminfo.getPOstCode()}} {{Firminfo.getCity()}} <br>
+    </p>
+  </div>
+  <div id="subscribe">
+    <p>
+      Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>
+      Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. C<br>
+    </p>
+  </div>
+  <div id='map'>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.6546494971376!2d17.01717096135288!3d51.094764458579945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc26aef60d0eb%3A0x46286462cb3383eb!2sSky%20Tower!5e0!3m2!1spl!2spl!4v1573594756467!5m2!1spl!2spl"
+       width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  <div style="clear: both;"></div>
+  <div>
+    <button class="firstClassStyle"(click) = "clickLike()">Like|{{value1}}</button>
+    <button class="secondClassStyle" (click) = "clickDisLike()">dislike {{value2}}</button>
+    </div>
+
+</div>

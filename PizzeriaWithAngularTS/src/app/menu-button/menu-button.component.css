@@ -1,0 +1,44 @@
+#test
+{
+  width: 100%;
+  min-height: 40px;
+  background-color: blue;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+#PositionButton
+{
+  margin-left: 19%;
+}
+.button
+{
+  background-color: blue;
+  width: 15%;
+  min-height: 38px;
+  float: left;
+  border: 1px black solid;
+}
+
+a
+{
+  text-decoration: none;
+  color: white;
+}
+a :hover
+{
+  background-color: red;
+}
+p
+{
+  margin-top: 15px;
+  font-size: 1.2vw;
+  text-align: center;
+}
+#MainTest
+{
+  border: 2px orange solid;
+  width: 100%;
+
+}
+
+

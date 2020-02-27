@@ -1,0 +1,25 @@
+<div id="test">
+  sadasdsadsad
+</div>
+    <div id="okno">
+      <button class="Buttons" (click)="savaAll()" style="margin-left:30%;">Zapisz</button>
+      <button class="Buttons" (click)="cancel()">Anuluj</button>
+      <div style="padding: 4%;">
+        <ng-container *ngFor="let list of getListOfSub(); let i = index">
+          <p id="listOfPrzyprawy">
+            <button id="buttonPlus" (click)="setPositionOfElement(i)">+</button>
+            {{list.getName()}} {{list.getSymbol()}}
+          </p>
+        </ng-container>
+      </div>
+        <div style="clear:both"></div>
+        <div id="widowsOfChoiseList">
+          <div id="elemnetOfChoiseList" *ngFor="let listValue of this.getListaValue(); let i = index">
+            <p id="textOfChoiseList">
+              <button id="cancel" (click)="remove(i)">x</button>
+              {{listValue.getName()}}
+            </p>
+          </div>
+          <div style="clear:both"></div>
+        </div>
+    </div>

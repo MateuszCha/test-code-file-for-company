@@ -1,0 +1,81 @@
+<app-list-subs [hidden]="getIsHidde()" (zmienna)="changeFlag($event)" (zmienna2)="catchEmitedList($event)"></app-list-subs>
+<div id="testt">
+  <div id="listaa">
+    <div id="WelcomeMSg">
+      <h1>Witaj : {{ getLogUser().getUser().email}} !!</h1>
+    </div>
+    <div id="ButtonEdidMenu">
+      <button (click)="changeList(0);">MenuMain</button>
+      <button (click)="changeList(1);">MenuSub</button>
+      <button (click)="changeList(2);">Przyprawy</button>
+    </div>
+    <div style="height: 100%;">
+      <div id ="List">
+        <div id="ElementOfList" *ngFor="let list of this.getService().getFooList(); let i = index">
+          <button id="buttonRemove" (click)="this.removeOne(i,this.getService().getFooList())">x</button>
+          <button >edytuj</button>
+          <button id="buttonUpDown" *ngIf="list.getID() != 1" (click)="moveUper(i)">&#8593;</button>
+          <button id="buttonUpDown" *ngIf="i+1 != this.getService().getFooList().length" (click)="moveDown(i)">&#8595;</button>
+          <br>
+          {{list.toString()}}
+        </div>
+      </div>
+      <div id ="EditList">
+          <div id="EditButtonToMainList" *ngIf="this.getisVisableMainList()">
+            <form (ngSubmit)="addNewElemnetMainList(FormMain)" #FormMain="ngForm">
+              <label>Nazwa: </label>
+              <input ngModel type="text" name="name"  placeholder="nameMenu" required>
+              <br>
+              <label>Skrót nazwy: </label>
+              <input ngModel type="text" name="shortcutNameMenu"  placeholder="shortcutNameMenu" required>
+              <br>
+              <button type="submit" [disabled]="FormMain.invalid">Dodaj</button><br> <!-- (click)="addNewElemnetMainList(zmienna,subcribe)" -->
+          </form>
+          </div>
+          <div id="EditButtonToMenuList" *ngIf="this.getisVisableMenuList()">
+            <form (ngSubmit)="this.addNewElemnetMenuList(FormMenu)" #FormMenu="ngForm">
+                <label>Nazwa: </label>
+                <input ngModel type="text" name="name"  placeholder="nameDish" required>
+                <br>
+                <label>Składniki: </label>
+                <input [ngModel] ="this.getSubList()" type="text" name="ListOfSubs"  readonly="true" placeholder="ListOfSubs" (click)="this.newLista()" required>
+                <br>
+                <label>Wybór menu</label>
+                <select  ngModel name="mainMenu" required>
+                  <option *ngFor="let ListOfMainMenu of this.getService().getArrayList()" [ngValue]="ListOfMainMenu.getshortCutName()" placeholder="ListOfMenu">
+                    {{ListOfMainMenu.getName()}}
+                  </option>
+                </select>
+                <br>
+                <label>cena: </label>
+                <input ngModel type="number" name="prize"  placeholder="prize" required>
+                <br>
+                <label>Zdjecie: </label>
+                <input ngModel type="text" name="URL" placeholder="image">
+                <br>
+                <button type="submit" [disabled]="FormMenu.invalid">Dodaj</button><br>
+              </form>
+          </div>
+          <form></form><div
+          id="EditButtonToSubsList" *ngIf="this.getisVisableSubsList()">
+            <form (ngSubmit)="addNewElemnetSubsList(FormSub)" #FormSub="ngForm">
+                <label>Nazwa: </label>
+                <input ngModel type="text" name="name" placeholder="nameSubs" required>
+                <br>
+                <label>Emotikona skł.: </label>
+                <input ngModel type="text" name="SubCode" placeholder="CodeSubs/EmoticonSubs" required>
+                <br>
+                <button type="submit" [disabled]="FormSub.invalid">Dodaj</button><br> <!-- (click)="addNewElemnetSubsList(zmienna,subsCode) -->
+            </form>
+            </div>
+          <div id="ElementOfEditList" *ngFor="let list of this.getArrayLista(); let id = index">
+            <button id="buttonRemove" (click)="this.removeOne(id,this.getArrayLista())">x</button> <!-- this.getFooList() -->
+            {{list.toString()}}
+          </div>
+          <button (click)="removeAll()">Anuluj</button>
+          <button (click)="saveEditedList()">Zapisz</button>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>

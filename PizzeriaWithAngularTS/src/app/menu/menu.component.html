@@ -1,0 +1,21 @@
+<div id="testt">
+  <div id="listaa">
+    <ng-container *ngFor="let listMain of this.getServie().getArrayList(); let i = index">
+      <div class="test1" id="mainTitle" (click)="this.setIsVisablityTab(i)">
+         {{listMain.getName()}}
+        </div>
+      <div *ngFor="let ListMenu of this.getTabTab(i); let j = index;" [hidden]="this.getIsVisablityTab(i)">
+          <div class="test2" id="Title">
+              <div id="image"> <img [src]="ListMenu.getImageUrl()"></div>
+              <div id="subscribe">
+                {{j+1}} . {{ListMenu.getName()}} <br>
+                {{ ListMenu.getSubscribe()}}
+              </div>
+              <div id="addButton">
+                <button>Dodaj</button>
+              </div><div style="clear:both"></div>
+          </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

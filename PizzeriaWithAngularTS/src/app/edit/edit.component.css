@@ -1,0 +1,102 @@
+#testt
+{
+  background-color: cornsilk;
+  width: 100%;
+}
+#listaa
+{
+  background-color: #C9C9C9;
+  height: 100%;
+  min-height: 500px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  -webkit-box-shadow: 0px 6px 13px 5px rgba(235, 235, 235, 0.473);
+  -moz-box-shadow: 0px 6px 13px 5px rgba(235, 235, 235, 0.473);
+  box-shadow: 0px 6px 13px 5px rgb(85, 83, 83);
+}
+h1
+{
+  margin-top:0px;
+  margin-left: 70%;
+  padding-top: 2%;
+  font-size: 1.0vw;
+}
+p
+{
+  margin-top:20px;
+  background-color: red;
+}
+button{
+  background-color: blue;
+  width: 20%;
+  margin-bottom: 10px;
+  padding-bottom:0.5%;
+  padding-top:0.5%;
+  text-align: center;
+  font-size: 0.8vw;
+  color: white;
+}
+button:hover{
+  background-color: #0000ffbb;
+}
+#List{
+  width: 48%;
+  min-height: 400px;
+  height: 100%;
+  margin-left: 2%;
+  float: left;
+  border-right: 3px solid black;
+  font-size: 1vw;
+
+}
+#EditList{
+  width: 48%;
+  height: 100%;
+  min-width: 144px;
+  float: left;
+  font-size: 1vw;
+  text-align: right;
+}
+#ElementOfEditList {
+  text-align: left;
+  white-space: pre-line;
+
+}
+#ElementOfList {
+  white-space: pre-line;
+  text-align: left;
+  border-bottom: 1px solid black;
+  margin-top: 2%;
+}
+#buttonRemove{
+
+  background-color: red;
+  width: 4%;
+  margin: 0;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 0;
+  font-size: 0.8vw;
+}
+#buttonUpDown{
+  background-color: green;
+  width: 4%;
+  margin: 0;
+  margin-left: 5%;
+  padding: 0;
+  font-size: 0.8vw;
+}
+input{
+  height: 10%;
+  font-size: 1vw;
+  margin-right: 20%;
+}
+
+select{
+  margin-right: 40%;
+  margin-left: 10%;
+  font-size: 1vw;
+  width: auto;
+  max-width: 60px;
+}

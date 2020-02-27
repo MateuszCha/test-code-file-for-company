@@ -1,0 +1,44 @@
+#test
+{
+  background-color: rgb(141, 67, 67);
+  width: 100%;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
+}
+#Title
+{
+    height: 100%;
+    max-height: 200px;
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+p
+{
+  margin-top: 10%;
+  margin-left: 5%;
+  font-size: 2.1vw;
+  letter-spacing: 0.5vw;
+  padding: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  transform: rotate(10deg);
+  border-bottom: 2px black solid;
+
+}
+#Image
+{
+  width: 40%;
+  margin-left: 10%;
+  max-height: 200px;
+  float: left;
+}
+img{
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 0px;
+}

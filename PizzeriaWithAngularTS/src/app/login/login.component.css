@@ -1,0 +1,61 @@
+#testt
+{
+  background-color: cornsilk;
+  width: 100%;
+}
+#listaa
+{
+  background-color: #C9C9C9;
+  height: 100%;
+  min-height: 500px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  -webkit-box-shadow: 0px 6px 13px 5px rgba(235, 235, 235, 0.473);
+  -moz-box-shadow: 0px 6px 13px 5px rgba(235, 235, 235, 0.473);
+  box-shadow: 0px 6px 13px 5px rgb(85, 83, 83);
+}
+p
+{
+  margin-top:0px;
+  background-color: red;
+}
+label
+{
+  font-size: 1vw;
+}
+input
+{
+  width: 50%;
+  height: 10%;
+  margin-top: 20px;
+  font-size: 1vw;
+}
+button
+{
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  text-align: center;
+  font-size: 0.8vw;
+  padding:0px;
+
+}
+form{
+  padding: 5%;
+}
+#formss
+{
+  background-color: cornsilk;
+  width: 50%;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+  top: 150px;
+  padding: 10px;
+  border: 1px solid  rgb(85, 83, 83);
+  border-radius: 3%;
+  -webkit-box-shadow: inset 0px 0px 20px 0px  rgb(85, 83, 83);
+-moz-box-shadow: inset 0px 0px 20px 0px  rgb(85, 83, 83);
+box-shadow: inset 0px 0px 20px 0px  rgb(85, 83, 83);}

@@ -1,0 +1,18 @@
+<div id="testt">
+  <div id="listaa">
+    <div id="formss">
+      <form (ngSubmit)="login(formDate)" #formDate="ngForm">
+        <div class="styleInline">
+          <label>Login: </label>
+          <input ngModel type="email" name="email" required >
+        </div>
+        <div class="styleInline">
+          <label>Hasło: </label>
+          <input ngModel type="password" name="passwordd" required >
+        </div>
+        <button type="submit" [disabled]="formDate.invalid">Zaloguj</button>
+      </form>
+   </div>
+  </div>
+</div>
+

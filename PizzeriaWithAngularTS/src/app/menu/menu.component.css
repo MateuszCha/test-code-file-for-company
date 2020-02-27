@@ -1,0 +1,91 @@
+#testt
+{
+  background-color: cornsilk;
+  width: 100%;
+}
+#listaa
+{
+  background-color: #C9C9C9;
+  height: 100%;
+  min-height: 400px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  -webkit-box-shadow: 0px 6px 13px 5px rgba(235, 235, 235, 0.473);
+  -moz-box-shadow: 0px 6px 13px 5px rgba(235, 235, 235, 0.473);
+  box-shadow: 0px 6px 13px 5px hsl(0, 1%, 33%);
+}
+#Title
+{
+  background-color: yellow;
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+#mainTitle
+{
+  padding: 2%;
+  font-size: 2vw;
+  border-bottom: 2px solid  #444242;
+  background-color: #b8b8b8;
+}
+#mainTitle:hover{
+  background-color: #b8b8b8bb;;
+}
+#image
+{
+  background-color: blue;
+  height: 100px;
+  width: 15%;
+  margin-left: 4%;
+  margin-top: 20px;
+  float: left;
+}
+#subscribe
+{
+  background-color: red;
+  height: 80px;
+  width: 60%;
+  margin-left: 4%;
+  margin-top: 40px;
+  float: left;
+  text-align: left;
+}
+#addButton
+{
+  background-color: #008000;
+  height: 40px;
+  max-width: 12%;
+  margin-left: 3%;
+  margin-top: 55px;
+  float: left;
+}
+button
+{
+  width: 100%;
+  padding: 0px;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 1vw;
+}
+span
+{
+  background-color: white;
+  width: 20%;
+  padding: 2%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1vw;
+  border: 1px orange solid;
+}
+.test1{
+  cursor: pointer;
+}
+
+#ModelList{
+  background-color: brown;
+}
+img{
+  height: 100%;
+  width: 100%;
+}

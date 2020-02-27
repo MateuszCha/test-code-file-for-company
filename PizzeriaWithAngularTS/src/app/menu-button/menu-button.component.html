@@ -1,0 +1,38 @@
+<div id="test">
+    <div id="PositionButton">
+      <a [routerLink]="['/start']">
+        <div class="button">
+            <p>Start</p>
+        </div>
+      </a>
+      <a routerLink="/menu">
+        <div class="button">
+             <p>Menu</p>
+        </div>
+      </a>
+      <a [routerLink]="['/about']">
+        <div class="button">
+          <p>O Nas</p>
+        </div>
+      </a>
+      <div class="button">
+           <p>Zamowienie</p>
+      </div>
+      <a *ngIf='!getLogUser().getUser()' [routerLink]="['/logIn']">
+        <div class="button">
+            <p>Zaloguj</p>
+        </div>
+      </a>
+      <a *ngIf='getLogUser().getUser()' [routerLink]="['/edit']">
+        <div class="button">
+            <p>Edytuj</p>
+        </div>
+      </a>
+      <a *ngIf='getLogUser().getUser()' [routerLink]="['/logIn']" (click)='logOut()'>
+        <div class="button">
+            <p>Wyloguj</p>
+        </div>
+      </a>
+      <div style="clear: both"></div>
+    </div>
+   </div>
