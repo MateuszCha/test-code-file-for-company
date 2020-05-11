@@ -1,0 +1,87 @@
+package softReference;
+
+import java.lang.ref.SoftReference;
+import java.util.ArrayList;
+import java.util.List;
+
+/* 
+Soft references
+Analyze the example.
+Inside the main method, create a Monkey object and then create a soft reference (SoftReference) to it.
+
+
+
+*/
+public class Sofy {
+    public static Helper helper = new Helper();
+
+    public static class Monkey {
+        private String name;
+
+        public Monkey(String name) {
+            this.name = name;
+        }
+
+        protected void finalize() {
+            Helper.isFinalized = true;
+            System.out.format("Bye-bye, %s!\n", name);
+        }
+    }
+
+    public static void main(String args[]) throws InterruptedException {
+        helper.startTime();
+
+        Monkey monkey = new Monkey("George");
+        SoftReference<Monkey> reference = new SoftReference<>(monkey);
+
+        // Add a reference here
+        System.out.println("cos");
+        helper.callGC();
+        System.out.println("cos2");
+        monkey = null;
+        System.out.println("cos3");
+        helper.callGC();
+        System.out.println("cos4");
+        helper.consumeHeap();
+
+        if (reference.get() == null)
+            System.out.println("Finalized");
+
+        helper.finish();
+    }
+
+    public static class Helper {
+        public static boolean isFinalized;
+
+        private long startTime;
+
+        void startTime() {
+            this.startTime = System.currentTimeMillis();
+        }
+
+        int getTime() {
+            return (int) (System.currentTimeMillis() - startTime) / 1000;
+        }
+
+        void callGC() throws InterruptedException {
+            System.gc();
+            Thread.sleep(1000);
+        }
+
+        void consumeHeap() {
+            try {
+                List<Solution> heap = new ArrayList<Solution>(100000);
+                while (!isFinalized) {
+                    heap.add(new Solution());
+                }
+            } catch (OutOfMemoryError e) {
+                System.out.println("An out-of-memory exception has occurred");
+            }
+        }
+
+        public void finish() {
+            System.out.println("Done");
+            System.out.println("It took " + getTime() + " s");
+        }
+    }
+}
